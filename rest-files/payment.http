@@ -1,0 +1,23 @@
+POST  http://localhost:9191/payment
+Content-Type: application/json
+
+{
+    "paymentStatus" : "created"
+}
+
+
+############################################
+
+
+
+POST  http://localhost:8989/order
+Content-Type: application/json
+
+{
+    "order" : {
+        "name" : "Lap",
+        "price" : "12",
+        "qty" : "5"
+    },
+    "payment" : {}
+}
